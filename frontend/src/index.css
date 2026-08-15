@@ -24,7 +24,7 @@
 
 html[data-theme="light"] {
   --bg: #ffffff;
-  --grid-line: rgba(0, 0, 0, 0.045);
+  --grid-line: rgba(0, 0, 0, 0.025);
   --text-primary: #16181d;
   --text-secondary: #6b7280;
   --text-muted: #9aa1ac;
@@ -53,7 +53,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --bg: #0b0b0d;
-  --grid-line: rgba(255, 255, 255, 0.045);
+  --grid-line: rgba(255, 255, 255, 0.025);
   --text-primary: #f5f5f7;
   --text-secondary: #9a9ba3;
   --text-muted: #6f7078;
