@@ -495,7 +495,7 @@ a:focus-visible {
 .social-icons {
   display: flex;
 
-  gap: 5px;
+  gap: 8px;
 
   flex-shrink: 0;
 }
@@ -1754,13 +1754,13 @@ footer {
   }
 
   .icon-circle {
-    width: 36px;
+    width: 42px;
 
-    height: 36px;
+    height: 42px;
 
-    min-width: 36px;
+    min-width: 42px;
 
-    font-size: 15px;
+    font-size: 18px;
   }
 
 
