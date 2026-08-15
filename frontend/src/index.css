@@ -1,0 +1,1803 @@
+/* =========================================================
+   NAGARANJAN R — PORTFOLIO
+   RESPONSIVE CSS
+   FONT: INTER
+   ========================================================= */
+
+/* ---------- Font ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================================
+   ROOT
+   ========================================================= */
+
+:root {
+  --grid-size: 5px;
+}
+
+
+/* =========================================================
+   LIGHT THEME
+   ========================================================= */
+
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --grid-line: rgba(0, 0, 0, 0.045);
+  --text-primary: #16181d;
+  --text-secondary: #6b7280;
+  --text-muted: #9aa1ac;
+  --accent: #4f5bd5;
+  --accent-soft: #e8e9fb;
+  --card-bg: #ffffff;
+  --card-border: rgba(79, 91, 213, 0.28);
+  --dashed-border: rgba(120, 120, 140, 0.35);
+  --shadow: 0 10px 30px rgba(30, 30, 60, 0.06);
+  --pill-bg: #4f5bd5;
+  --pill-text: #ffffff;
+  --icon-bg: #ffffff;
+  --icon-border: rgba(0, 0, 0, 0.08);
+  --icon-shadow: 0 4px 14px rgba(30, 30, 60, 0.08);
+  --divider: rgba(0, 0, 0, 0.08);
+  --moon-color: #c01ee9;
+  --toggle-bg: #ffffff;
+  --toggle-border: rgba(0, 0, 0, 0.08);
+  --project-img-bg: #eef0fb;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+html[data-theme="dark"] {
+  --bg: #0b0b0d;
+  --grid-line: rgba(255, 255, 255, 0.045);
+  --text-primary: #f5f5f7;
+  --text-secondary: #9a9ba3;
+  --text-muted: #6f7078;
+  --accent: #8f97f0;
+  --accent-soft: rgba(143, 151, 240, 0.15);
+  --card-bg: #131316;
+  --card-border: rgba(255, 255, 255, 0.14);
+  --dashed-border: rgba(255, 255, 255, 0.22);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --pill-bg: #f2f2f4;
+  --pill-text: #111114;
+  --icon-bg: #1c1c20;
+  --icon-border: rgba(255, 255, 255, 0.12);
+  --icon-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --divider: rgba(255, 255, 255, 0.14);
+  --sun-color: #f5c542;
+  --toggle-bg: #1c1c20;
+  --toggle-border: rgba(255, 255, 255, 0.14);
+  --project-img-bg: #202024;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+
+  background-color: var(--bg);
+
+  background-image:
+    linear-gradient(
+      to right,
+      var(--grid-line) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--grid-line) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    var(--grid-size)
+    var(--grid-size);
+
+  background-attachment: fixed;
+
+  color: var(--text-primary);
+
+  font-family: "Inter", sans-serif;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ---------- Global font ---------- */
+
+body,
+button,
+input,
+textarea,
+select,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  font-family: "Inter", sans-serif;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ---------- Buttons ---------- */
+
+button {
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   MAIN WRAPPER
+   ========================================================= */
+
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 28px 20px 40px;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: var(--toggle-bg);
+
+  border: 1px solid var(--toggle-border);
+
+  box-shadow: var(--icon-shadow);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-primary);
+
+  z-index: 20;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.15s ease;
+}
+
+.sun-icon {
+  color: var(--sun-color);
+}
+
+.moon-icon {
+  color: var(--moon-color);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.06);
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.layout {
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 34px;
+
+  padding-top: 46px;
+}
+
+
+/* =========================================================
+   COLUMNS — DEFAULT MOBILE
+   ========================================================= */
+
+.col-left,
+.col-right {
+  width: 100%;
+  min-width: 0;
+}
+
+.col-left {
+  padding-top:8%;
+}
+
+.col-right {
+  padding: 0;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.col-divider {
+  display: none;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-top {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: 20px;
+
+  flex-wrap: nowrap;
+}
+
+
+/* ---------- Avatar ---------- */
+
+.avatar {
+  width: 100px;
+  height: 100px;
+
+  min-width: 96px;
+
+  flex: 0 0 96px;
+
+  border-radius: 50%;
+
+  border: 2px solid var(--accent);
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f5bd5,
+      #7dd3c0
+    );
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.avatar svg {
+  width: 62%;
+  height: 62%;
+}
+
+
+/* ---------- Hero Text ---------- */
+
+.hero-text {
+  flex: 1 1 auto;
+
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+.hero-text .hi {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: var(--text-primary);
+
+  margin: 0 0 4px;
+}
+
+.hero-text h1 {
+  font-size: 18px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+
+  margin: 0 0 6px;
+
+  color: var(--text-primary);
+
+  line-height: 1.25;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: clip;
+}
+
+.hero-text .role {
+  font-size: 14px;
+
+  letter-spacing: 5px;
+
+  font-weight: 700;
+
+  color: var(--accent);
+
+  margin: 0;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.description-card {
+  width: 100%;
+
+  margin-top: 30px;
+
+  border: 1.5px dashed var(--dashed-border);
+
+  border-radius: 16px;
+
+  padding: 20px 22px;
+
+  font-size: 14.5px;
+
+  line-height: 1.65;
+
+  color: var(--text-primary);
+
+  background: var(--project-img-bg);
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.actions {
+  width: 100%;
+
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+
+/* ---------- Resume ---------- */
+
+.resume-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: var(--pill-bg);
+
+  color: var(--pill-text);
+
+  border: none;
+
+  border-radius: 999px;
+
+  padding: 12px 22px;
+
+  font-size: 14.5px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  box-shadow: var(--shadow);
+
+  transition:
+    transform 0.15s ease,
+    filter 0.15s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-1px);
+
+  filter: brightness(1.05);
+}
+
+
+/* ---------- Social Icons ---------- */
+
+.social-icons {
+  display: flex;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+.icon-circle {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--icon-bg);
+
+  border: 1px solid var(--icon-border);
+
+  box-shadow: var(--icon-shadow);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+
+  color: var(--text-primary);
+
+  transition:
+    transform 0.15s ease;
+}
+
+.icon-circle:hover {
+  transform: translateY(-2px);
+}
+
+.icon-circle.linkedin {
+  color: #0a66c2;
+}
+
+
+/* =========================================================
+   MOBILE HORIZONTAL DIVIDER
+   ========================================================= */
+
+.mobile-hr {
+  width: 100%;
+
+  border: none;
+
+  border-top: 1px solid var(--divider);
+
+  margin: 30px 0 0;
+
+  display: block;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+h2.section-title {
+  font-size: 15px;
+
+  font-weight: 65r0;
+
+  margin: 0 0 16px;
+
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.projects-section {
+  position: relative;
+
+  width: 100%;
+
+  min-width: 0;
+
+  margin-bottom: 20px;
+}
+
+.projects-row-wrap {
+  position: relative;
+
+  width: 100%;
+
+  min-width: 0;
+}
+
+.projects-track {
+  width: 100%;
+
+  display: flex;
+
+  gap: 18px;
+
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+
+  padding-bottom: 4px;
+
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+}
+
+.projects-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ---------- Project Card ---------- */
+
+.project-card {
+  scroll-snap-align: start;
+
+  flex: 0 0 240px;
+
+  width: 240px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 16px;
+
+  padding: 14px;
+
+  box-shadow: var(--shadow);
+
+  min-width: 0;
+}
+
+.project-thumb {
+  width: 100%;
+
+  background: var(--project-img-bg);
+
+  border-radius: 12px;
+
+  height: 96px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  color: var(--accent);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+
+  overflow: hidden;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 15px;
+
+  margin: 0 0 4px;
+
+  color: var(--text-primary);
+}
+
+.project-card p {
+  font-size: 12.5px;
+
+  color: var(--text-secondary);
+
+  margin: 0 0 14px;
+
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 12.5px;
+
+  font-weight: 600;
+}
+
+.project-links a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.project-links .demo {
+  color: var(--accent);
+}
+
+.project-links .repo {
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   PROJECT CAROUSEL ARROW
+   ========================================================= */
+
+.carousel-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  right: -8px;
+
+  transform: translateY(-50%);
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: var(--icon-bg);
+
+  border: 1px solid var(--icon-border);
+
+  box-shadow: var(--icon-shadow);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-primary);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.15s ease;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+  transform:
+    translateY(-50%)
+    scale(1.08);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.3;
+
+  cursor: default;
+}
+
+
+/* =========================================================
+   CERTIFICATES + SKILLS
+   ========================================================= */
+
+.mid-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+.mid-grid > div {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   CERTIFICATE CONTAINER
+   ========================================================= */
+
+.certs-container {
+  width: 100%;
+
+  border: 1.5px dashed var(--dashed-border);
+
+  border-radius: 16px;
+
+  padding: 8px;
+
+  height: 100%;
+
+  min-height: auto;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   CERTIFICATE CAROUSEL
+   ========================================================= */
+
+.certs-track {
+  width: 100%;
+
+  max-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  overflow-y: auto;
+
+  scroll-behavior: smooth;
+
+  scroll-snap-type: y mandatory;
+
+  padding: 4px 3px 4px 0;
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+.certs-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   CERTIFICATE CARD
+   ========================================================= */
+
+.cert-item {
+  width: 100%;
+
+  min-height: 60px;
+
+  flex: 0 0 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 12px;
+
+  padding: 12px 14px;
+
+  font-size: 13.5px;
+
+  font-weight: 600;
+
+  color: var(--text-primary);
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.25s ease;
+}
+
+.cert-item:hover {
+  transform: translateY(-1px);
+}
+
+
+/* ---------- Certificate name ---------- */
+
+.cert-item span,
+.cert-item .cert-name {
+  min-width: 0;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   CERTIFICATE VIEW BUTTON
+   ========================================================= */
+
+.cert-view-btn {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  border: 1px solid var(--card-border);
+
+  background: transparent;
+
+  color: var(--text-primary);
+
+  border-radius: 8px;
+
+  padding: 6px 10px;
+
+  font-size: 12.5px;
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cert-view-btn:hover {
+  background: var(--accent-soft);
+
+  color: var(--accent);
+
+  border-color: var(--accent);
+}
+
+
+/* =========================================================
+   CERTIFICATE UP / DOWN BUTTONS
+   ========================================================= */
+
+.cert-carousel-arrow {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: var(--icon-bg);
+
+  border: 1px solid var(--icon-border);
+
+  box-shadow: var(--icon-shadow);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--text-primary);
+
+  z-index: 10;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.15s ease;
+}
+
+
+/* =========================================================
+   CERTIFICATE FADE EFFECT
+   ========================================================= */
+
+.certs-container::before,
+.certs-container::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  height: 24px;
+
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.certs-container::before {
+  top: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      var(--card-bg),
+      transparent
+    );
+}
+
+.certs-container::after {
+  bottom: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      var(--card-bg),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-container {
+  width: 100%;
+
+  border: 1.5px dashed var(--dashed-border);
+
+  border-radius: 16px;
+
+  padding: 16px;
+
+  min-height: auto;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  align-content: flex-start;
+
+  margin-bottom: 30px;
+}
+
+.skill-chip {
+  background: var(--accent-soft);
+
+  color: var(--accent);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+}
+
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+.education-card {
+  width: 100%;
+
+  border: 1.5px dashed var(--dashed-border);
+
+  border-radius: 16px;
+
+  padding: 18px 20px;
+}
+
+.education-card h3 {
+  font-size: 14.5px;
+
+  margin: 0 0 4px;
+
+  color: var(--text-primary);
+}
+
+.education-card p {
+  font-size: 13px;
+
+  margin: 0;
+
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  text-align: center;
+
+  color: var(--text-muted);
+
+  font-size: 12.5px;
+
+  margin-top: 46px;
+
+  padding-top: 20px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 480px) {
+
+  .project-card {
+    width: 260px;
+
+    flex-basis: 260px;
+  }
+
+  .mid-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .certs-track {
+    max-height: 220px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  /* ---------- Main layout ---------- */
+
+  .layout {
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    gap: 0;
+
+    padding-top: 30px;
+  }
+
+
+  /* ---------- Left column ---------- */
+
+  .col-left {
+    flex: 0 0 40%;
+
+    max-width: 480px;
+
+    min-width: 0;
+
+    padding-right: 48px;
+  }
+
+
+  /* ---------- Desktop divider ---------- */
+
+  .col-divider {
+    display: block;
+
+    width: 1px;
+
+    min-width: 1px;
+
+    align-self: stretch;
+
+    background: var(--divider);
+
+    margin: 0 4px;
+  }
+
+
+  /* ---------- Right column ---------- */
+
+  .col-right {
+    flex: 1;
+
+    min-width: 0;
+
+    padding-left: 48px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 34px;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .hero-top {
+    gap: 20px;
+
+    flex-wrap: nowrap;
+  }
+
+  .avatar {
+    width: 118px;
+
+    height: 118px;
+
+    min-width: 118px;
+
+    flex-basis: 118px;
+  }
+
+  .hero-text .hi {
+    font-size: 17px;
+  }
+
+  .hero-text h1 {
+    font-size: 29px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+  }
+
+  .hero-text .role {
+    font-size: 16px;
+
+    letter-spacing: 4px;
+
+    white-space: nowrap;
+  }
+
+
+  /* ---------- Description ---------- */
+
+  .description-card {
+    font-size: 15.5px;
+
+    padding: 22px 26px;
+
+    margin-top: 26px;
+
+    background: var(--project-img-bg);
+  }
+
+
+  /* ---------- Actions ---------- */
+
+  .actions {
+    margin-top: 50px;
+  }
+
+  .resume-btn {
+    padding: 13px 26px;
+
+    font-size: 15px;
+  }
+
+  .social-icons{
+    margin-left: 20px;
+  }
+
+  .icon-circle {
+    width: 52px;
+
+    height: 52px;
+
+    min-width: 52px;
+
+    font-size: 22px;
+  }
+
+
+  /* ---------- Certificate ---------- */
+
+  .certs-container {
+    min-height: auto;
+    max-height: 220px;
+  }
+
+  .certs-track {
+    max-height: 220px;
+  }
+
+
+  /* ---------- Mobile HR hidden ---------- */
+
+  .mobile-hr {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1100px) {
+
+  .col-left {
+    flex-basis: 42%;
+
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .social-icons{
+    margin-left: 20px;
+  }
+
+  .certs-container {
+    min-height: auto;
+    max-height: 165px;
+  }
+
+  .certs-track {
+    max-height: 220px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* ---------- Wrapper ---------- */
+
+  .wrap {
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 20px 16px 32px;
+  }
+
+
+  /* ---------- Theme toggle ---------- */
+
+  .theme-toggle {
+    top: 14px;
+
+    right: 14px;
+
+    width: 40px;
+
+    height: 40px;
+  }
+
+
+  /* ---------- Single-column layout ---------- */
+
+  .layout {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+
+    padding-top: 48px;
+  }
+
+
+  /* ---------- Columns ---------- */
+
+  .col-left,
+  .col-right {
+    width: 100%;
+
+    max-width: 100%;
+
+    min-width: 0;
+  }
+
+  .col-left {
+    padding: 0;
+  }
+
+  .col-right {
+    padding: 0;
+  }
+
+
+  /* ---------- Divider ---------- */
+
+  .col-divider {
+    display: none !important;
+  }
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .hero-top {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: nowrap;
+  }
+
+
+  /* ---------- Mobile avatar ---------- */
+
+  .avatar {
+    width: 90px;
+
+    height: 90px;
+
+    min-width: 90px;
+
+    flex: 0 0 82px;
+  }
+
+
+  /* ---------- Mobile hero text ---------- */
+
+  .hero-text {
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    overflow: hidden;
+  }
+
+  .hero-text .hi {
+    font-size: 13px;
+
+    margin: 0 0 3px;
+  }
+
+  .hero-text h1 {
+    font-size: 18px;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.8px;
+
+    margin: 0 0 5px;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+  .hero-text .role {
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+  }
+
+
+  /* =======================================================
+     DESCRIPTION
+     ======================================================= */
+
+  .description-card {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 16px 17px;
+
+    font-size: 13.5px;
+
+    line-height: 1.6;
+  }
+
+
+  /* =======================================================
+     ACTIONS
+     ======================================================= */
+
+  .actions {
+    width: 100%;
+
+    margin-top: 18px;
+
+    gap: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+  }
+
+  .resume-btn {
+    padding: 10px 18px;
+
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 9px;
+  }
+
+  .icon-circle {
+    width: 52px;
+
+    height: 52px;
+
+    min-width: 52px;
+
+    font-size: 22px;
+  }
+
+
+  /* =======================================================
+     MOBILE HR
+     ======================================================= */
+
+  .mobile-hr {
+    display: block;
+
+    width: 100%;
+
+    margin: 30px 0 0;
+  }
+
+
+  /* =======================================================
+     PROJECTS
+     ======================================================= */
+
+  .projects-section {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .projects-row-wrap {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+  .projects-track {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overscroll-behavior-x: contain;
+  }
+
+  .project-card {
+    width: 230px;
+
+    flex: 0 0 230px;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+
+  /* ---------- Section titles ---------- */
+
+  h2.section-title {
+    font-size: 18px;
+  }
+
+
+  /* =======================================================
+     CERTIFICATES / SKILLS
+     ======================================================= */
+
+  .mid-grid {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+  .certs-container,
+  .skills-container {
+    width: 100%;
+    max-height: 165px;
+    min-height: 0;
+  }
+
+
+  /* ---------- Vertical certificate swipe ---------- */
+
+  .certs-track {
+    max-height: 220px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    overscroll-behavior-y: contain;
+
+    scroll-snap-type: y mandatory;
+  }
+
+
+  .cert-item {
+    min-height: 58px;
+
+    flex-basis: 58px;
+
+    padding: 11px 12px;
+
+    font-size: 13px;
+  }
+
+
+  /*
+     Mobile users can swipe vertically.
+     Hide desktop arrows.
+  */
+
+  .cert-carousel-arrow {
+    display: none;
+  }
+
+
+  /* =======================================================
+     EDUCATION
+     ======================================================= */
+
+  .education-card {
+    width: 100%;
+
+    padding: 16px 17px;
+  }
+
+
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+  footer {
+    margin-top: 36px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .wrap {
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .layout {
+    gap: 24px;
+  }
+
+  .hero-top {
+    gap: 11px;
+  }
+
+  .avatar {
+    width: 68px;
+
+    height: 68px;
+
+    min-width: 68px;
+
+    flex-basis: 68px;
+  }
+
+  .hero-text .hi {
+    font-size: 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 16px;
+
+    letter-spacing: 0.5px;
+  }
+
+  .hero-text .role {
+    font-size: 11px;
+
+    letter-spacing: 5px;
+  }
+
+  .description-card {
+    font-size: 13px;
+
+    padding: 14px 15px;
+  }
+
+  .actions {
+    gap: 15px;
+  }
+
+  .resume-btn {
+    min-height: 50px;
+
+    padding: 9px 14px;
+
+    font-size: 12px;
+  }
+
+  .icon-circle {
+    width: 45px;
+
+    height: 45px;
+
+    min-width: 45px;
+
+    font-size: 20px;
+  }
+
+
+  /* ---------- Small certificate cards ---------- */
+
+  .certs-track {
+    max-height: 200px;
+  }
+
+  .cert-item {
+    min-height: 56px;
+
+    flex-basis: 56px;
+
+    padding: 10px;
+
+    font-size: 12px;
+  }
+
+  .cert-view-btn {
+    padding: 5px 8px;
+
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+    transition: none !important;
+
+    scroll-behavior: auto !important;
+  }
+}
+
