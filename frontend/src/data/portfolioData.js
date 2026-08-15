@@ -4,7 +4,7 @@ const portfolioData = {
   description:
     "Analyze complex data using data engineering, big data analytics, statistical analysis, SQL, Python, and visualization to find insights and support data-driven decisions.",
   profileImage: "/Profile/Profile.jpeg",
-  resumeUrl: "/public/Resume/Resume.pdf",
+  resumeUrl: "/Resume/Resume.pdf",
   socials: {
     linkedin: "https://linkedin.com/in/Nagaranjan-r",
     github: "https://github.com/nagaranjan-r-de",
@@ -21,8 +21,8 @@ const portfolioData = {
     },
   ],
   certificates: [
-    { id: "c1", name: "AWS Cloud Certification", url: "/public/certificates/AWS Cloud Certification.pdf" },
-    { id: "c2", name: "MERN Stack Certification", url: "/public/certificates/MERN Stack.pdf" },
+    { id: "c1", name: "AWS Cloud Certification", url: "/certificates/AWS Cloud Certification.pdf" },
+    { id: "c2", name: "MERN Stack Certification", url: "/certificates/MERN Stack.pdf" },
   ],
   skills: ["Python", "SQL", "AWS"],
   education: {
