@@ -3,7 +3,7 @@ const portfolioData = {
   role: "Data Engineer",
   description:
     "Analyze complex data using data engineering, big data analytics, statistical analysis, SQL, Python, and visualization to find insights and support data-driven decisions.",
-  profileImage: "/Profile.jpeg",
+  profileImage: "/public/Profile/Profile.jpeg",
   resumeUrl: "/public/Resume/Resume.pdf",
   socials: {
     linkedin: "https://linkedin.com/in/Nagaranjan-r",
