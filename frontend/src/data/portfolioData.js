@@ -22,7 +22,7 @@ const portfolioData = {
     {
       id: "p2",
       name: "personal-money-manager",
-      description: "It helps my finances by setting daily and monthly spending limits and monitoring the expenses.",
+      description: "A smart expense-tracking app that helps me to manage my finances by setting daily or monthly spending limits and monitoring the expenses.",
       image: "/projects/project2.jpeg",
       demoUrl: "person use only",
       repoUrl: "https://github.com/nagaranjan-r-de/personal-money-management",
