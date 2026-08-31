@@ -23,7 +23,6 @@ export default function ProjectCard({ project }) {
       </div>
       <h3>{project.name}</h3>
       <p>{project.description}</p>
-      <p>Landing soon</p>
       <div className="project-links">
         <a className="demo" href={project.demoUrl} target="_blank" rel="noopener noreferrer">
           Live demo <ExternalLink size={11} />
