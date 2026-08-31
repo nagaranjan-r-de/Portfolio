@@ -15,7 +15,7 @@ const portfolioData = {
       id: "p1",
       name: "wildlife movement analysis system.",
       description: "Using demo data to analyze wildlife behavior, detect movement anomalies, and assess conservation risks through an interactive dashboard.",
-      image: "/projects/project1.jpeg",
+      image: "/projects/project1.png",
       demoUrl: "https://wild-movement-analysis.netlify.app",
       repoUrl: "https://github.com/nagaranjan-r-de/wildlife-movement-analysis/tree/main",
     },
