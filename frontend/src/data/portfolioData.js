@@ -12,12 +12,12 @@ const portfolioData = {
   },
   projects: [
     {
-      // id: "p1",
-      // name: "Sales Data Pipeline",
-      // description: "ETL pipeline processing daily sales data with Airflow and Spark.",
-      // image: "/projects/project1.png",
-      // demoUrl: "#",
-      // repoUrl: "#",
+      id: "p1",
+      name: "wildlife movement analysis and conservation monitoring system.",
+      description: "Using demo data, predicts behavior, detects anomalies, and provides conservation risk insights through an interactive dashboard.",
+      image: "/projects/project1.png",
+      demoUrl: "https://wild-movement-analysis.netlify.app",
+      repoUrl: "https://github.com/nagaranjan-r-de/wildlife-movement-analysis/tree/main",
     },
   ],
   certificates: [
