@@ -12,12 +12,20 @@ const portfolioData = {
   },
   projects: [
     {
-      // id: "p1",
-      // name: "Sales Data Pipeline",
-      // description: "ETL pipeline processing daily sales data with Airflow and Spark.",
-      // image: "/projects/project1.png",
-      // demoUrl: "#",
-      // repoUrl: "#",
+      id: "p1",
+      name: "wildlife movement analysis system.",
+      description: "Using demo data to analyze wildlife behavior, detect movement anomalies, and assess conservation risks through an interactive dashboard.",
+      image: "/projects/project1.jpeg",
+      demoUrl: "https://wild-movement-analysis.netlify.app",
+      repoUrl: "https://github.com/nagaranjan-r-de/wildlife-movement-analysis/tree/main",
+    },
+    {
+      id: "p2",
+      name: "personal-money-manager",
+      description: "A smart expense-tracking app that helps me to manage my finances by setting daily or monthly spending limits and monitoring the expenses.",
+      image: "/projects/project2.jpeg",
+      demoUrl: "person use only",
+      repoUrl: "https://github.com/nagaranjan-r-de/personal-money-management",
     },
   ],
   certificates: [
