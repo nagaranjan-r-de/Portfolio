@@ -13,7 +13,7 @@ const portfolioData = {
   projects: [
     {
       id: "p1",
-      name: "wildlife movement analysis and conservation monitoring system.",
+      name: "wildlife movement analysis system.",
       description: "Using demo data to analyze wildlife behavior, detect movement anomalies, and assess conservation risks through an interactive dashboard.",
       image: "/projects/project1.jpeg",
       demoUrl: "https://wild-movement-analysis.netlify.app",
