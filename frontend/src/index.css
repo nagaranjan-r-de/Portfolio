@@ -625,6 +625,8 @@ h2.section-title {
   flex: 0 0 240px;
 
   width: 240px;
+  
+  min-height: 300px;
 
   background: var(--card-bg);
 
