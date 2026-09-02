@@ -39,7 +39,7 @@ export default function HeroSection() {
       <div className="actions">
         <a
   className="resume-btn"
-  href={resumeUrl}
+  href={rsumeUrl}
   onClick={handleResumeClick}
   aria-label="View resume"
 >
