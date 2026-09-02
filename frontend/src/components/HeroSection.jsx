@@ -5,7 +5,16 @@ import portfolioData from "../data/portfolioData";
 
 export default function HeroSection() {
   const { name, role, description, profileImage, resumeUrl, socials } = portfolioData;
+  const handleResumeClick = (e) => {
+  e.preventDefault();
+  const googleDocsUrl = "https://docs.google.com/document/d/1stgbEIFOXyouzpNoxLgXI49ot60VwMa9rQo5kHlUNhA/edit?usp=drivesdk";
 
+  // Check if primary URL works, fallback if it fails
+  fetch(resumeUrl, { method: 'HEAD', mode: 'no-cors' })
+    .then(() => window.open(resumeUrl, '_blank'))
+    .catch(() => window.open(googleDocsUrl, '_blank'));
+};
+  
   return (
     <div className="col-left">
       <div className="hero-top">
@@ -29,14 +38,13 @@ export default function HeroSection() {
 
       <div className="actions">
         <a
-          className="resume-btn"
-          href={resumeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View resume"
-        >
-          <Eye size={16} /> View resume
-        </a>
+  className="resume-btn"
+  href={resumeUrl}
+  onClick={handleResumeClick}
+  aria-label="View resume"
+>
+  <Eye size={16} /> View resume
+</a>
         <div className="social-icons">
           <a
             className="icon-circle linkedin"
