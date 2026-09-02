@@ -8,7 +8,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-
 /* =========================================================
    ROOT
    ========================================================= */
@@ -16,7 +15,6 @@
 :root {
   --grid-size: 5px;
 }
-
 
 /* =========================================================
    LIGHT THEME
@@ -46,7 +44,6 @@ html[data-theme="light"] {
   --project-img-bg: #eef0fb;
 }
 
-
 /* =========================================================
    DARK THEME
    ========================================================= */
@@ -74,7 +71,6 @@ html[data-theme="dark"] {
   --toggle-border: rgba(255, 255, 255, 0.14);
   --project-img-bg: #202024;
 }
-
 
 /* =========================================================
    GLOBAL
@@ -133,7 +129,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-
 /* ---------- Global font ---------- */
 
 body,
@@ -154,14 +149,12 @@ div {
   font-family: "Inter", sans-serif;
 }
 
-
 /* ---------- Links ---------- */
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
 
 /* ---------- Buttons ---------- */
 
@@ -175,7 +168,6 @@ a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
-
 
 /* =========================================================
    MAIN WRAPPER
@@ -191,7 +183,6 @@ a:focus-visible {
 
   position: relative;
 }
-
 
 /* =========================================================
    THEME TOGGLE
@@ -240,7 +231,6 @@ a:focus-visible {
   transform: scale(1.06);
 }
 
-
 /* =========================================================
    MAIN LAYOUT
    ========================================================= */
@@ -257,7 +247,6 @@ a:focus-visible {
   padding-top: 46px;
 }
 
-
 /* =========================================================
    COLUMNS — DEFAULT MOBILE
    ========================================================= */
@@ -269,13 +258,12 @@ a:focus-visible {
 }
 
 .col-left {
-  padding-top:8%;
+  padding-top: 8%;
 }
 
 .col-right {
   padding: 0;
 }
-
 
 /* =========================================================
    DIVIDER
@@ -284,7 +272,6 @@ a:focus-visible {
 .col-divider {
   display: none;
 }
-
 
 /* =========================================================
    HERO
@@ -302,7 +289,6 @@ a:focus-visible {
 
   flex-wrap: nowrap;
 }
-
 
 /* ---------- Avatar ---------- */
 
@@ -346,7 +332,6 @@ a:focus-visible {
   width: 62%;
   height: 62%;
 }
-
 
 /* ---------- Hero Text ---------- */
 
@@ -402,7 +387,6 @@ a:focus-visible {
   white-space: nowrap;
 }
 
-
 /* =========================================================
    DESCRIPTION
    ========================================================= */
@@ -429,7 +413,6 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
-
 /* =========================================================
    ACTIONS
    ========================================================= */
@@ -448,7 +431,6 @@ a:focus-visible {
 
   flex-wrap: wrap;
 }
-
 
 /* ---------- Resume ---------- */
 
@@ -488,7 +470,6 @@ a:focus-visible {
 
   filter: brightness(1.05);
 }
-
 
 /* ---------- Social Icons ---------- */
 
@@ -537,7 +518,6 @@ a:focus-visible {
   color: #0a66c2;
 }
 
-
 /* =========================================================
    MOBILE HORIZONTAL DIVIDER
    ========================================================= */
@@ -554,7 +534,6 @@ a:focus-visible {
   display: block;
 }
 
-
 /* =========================================================
    SECTION TITLES
    ========================================================= */
@@ -562,13 +541,12 @@ a:focus-visible {
 h2.section-title {
   font-size: 15px;
 
-  font-weight: 65r0;
+  font-weight: 700;
 
   margin: 0 0 16px;
 
   color: var(--text-primary);
 }
-
 
 /* =========================================================
    PROJECTS
@@ -616,7 +594,6 @@ h2.section-title {
   display: none;
 }
 
-
 /* ---------- Project Card ---------- */
 
 .project-card {
@@ -625,7 +602,7 @@ h2.section-title {
   flex: 0 0 240px;
 
   width: 240px;
-  
+
   min-height: 300px;
 
   background: var(--card-bg);
@@ -723,7 +700,6 @@ h2.section-title {
   color: var(--text-primary);
 }
 
-
 /* =========================================================
    PROJECT CAROUSEL ARROW
    ========================================================= */
@@ -772,7 +748,6 @@ h2.section-title {
   cursor: default;
 }
 
-
 /* =========================================================
    CERTIFICATES + SKILLS
    ========================================================= */
@@ -796,7 +771,6 @@ h2.section-title {
 
   flex-direction: column;
 }
-
 
 /* =========================================================
    CERTIFICATE CONTAINER
@@ -825,7 +799,6 @@ h2.section-title {
 
   flex-direction: column;
 }
-
 
 /* =========================================================
    CERTIFICATE CAROUSEL
@@ -858,7 +831,6 @@ h2.section-title {
 .certs-track::-webkit-scrollbar {
   display: none;
 }
-
 
 /* =========================================================
    CERTIFICATE CARD
@@ -909,7 +881,6 @@ h2.section-title {
   transform: translateY(-1px);
 }
 
-
 /* ---------- Certificate name ---------- */
 
 .cert-item span,
@@ -922,7 +893,6 @@ h2.section-title {
 
   white-space: nowrap;
 }
-
 
 /* =========================================================
    CERTIFICATE VIEW BUTTON
@@ -967,7 +937,6 @@ h2.section-title {
   border-color: var(--accent);
 }
 
-
 /* =========================================================
    CERTIFICATE UP / DOWN BUTTONS
    ========================================================= */
@@ -1004,7 +973,6 @@ h2.section-title {
     opacity 0.2s ease,
     transform 0.15s ease;
 }
-
 
 /* =========================================================
    CERTIFICATE FADE EFFECT
@@ -1048,7 +1016,6 @@ h2.section-title {
     );
 }
 
-
 /* =========================================================
    SKILLS
    ========================================================= */
@@ -1091,7 +1058,6 @@ h2.section-title {
   border-radius: 999px;
 }
 
-
 /* =========================================================
    EDUCATION
    ========================================================= */
@@ -1122,7 +1088,6 @@ h2.section-title {
   color: var(--text-secondary);
 }
 
-
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -1145,45 +1110,62 @@ footer {
 
 .navicons-wrap {
   width: 100%;
+
+  margin-top: 34px;
   margin-bottom: 20px;
 }
 
 .navicons-tablist {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 10px;
+
   margin-bottom: 18px;
 }
 
 .navicons-tab-btn {
   display: inline-flex;
+
   align-items: center;
+
   gap: 8px;
 
   padding: 10px 16px;
+
   border-radius: 999px;
 
   background: var(--icon-bg);
+
   border: 1px solid var(--icon-border);
+
   box-shadow: var(--icon-shadow);
 
   color: var(--text-secondary);
+
   font-size: 13px;
+
   font-weight: 600;
 
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
     color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .navicons-tab-btn:hover {
+  transform: translateY(-1px);
+
   color: var(--text-primary);
 }
 
 .navicons-tab-btn.is-active {
   background: var(--accent-soft);
+
   border-color: var(--accent);
+
   color: var(--accent);
 }
 
@@ -1193,10 +1175,13 @@ footer {
 
 .navicons-panel-container {
   width: 100%;
+
   box-sizing: border-box;
 
   border: 1.5px dashed var(--dashed-border);
+
   border-radius: 16px;
+
   padding: 20px;
 
   overflow: hidden;
@@ -1216,13 +1201,6 @@ footer {
     transform: translateY(0);
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .navicons-panel-content {
-    animation: none;
-  }
-}
-
 
 /* ---------- Nav icons — mobile ---------- */
 
@@ -1254,7 +1232,6 @@ footer {
   }
 }
 
-
 /* ---------- Nav icons — very small phones ---------- */
 
 @media (max-width: 380px) {
@@ -1285,7 +1262,6 @@ footer {
   }
 }
 
-
 /* =========================================================
    DESKTOP
    ========================================================= */
@@ -1304,7 +1280,6 @@ footer {
     padding-top: 30px;
   }
 
-
   /* ---------- Left column ---------- */
 
   .col-left {
@@ -1316,7 +1291,6 @@ footer {
 
     padding-right: 48px;
   }
-
 
   /* ---------- Desktop divider ---------- */
 
@@ -1334,7 +1308,6 @@ footer {
     margin: 0 4px;
   }
 
-
   /* ---------- Right column ---------- */
 
   .col-right {
@@ -1350,7 +1323,6 @@ footer {
 
     gap: 34px;
   }
-
 
   /* ---------- Hero ---------- */
 
@@ -1390,7 +1362,6 @@ footer {
     white-space: nowrap;
   }
 
-
   /* ---------- Description ---------- */
 
   .description-card {
@@ -1402,7 +1373,6 @@ footer {
 
     background: var(--project-img-bg);
   }
-
 
   /* ---------- Actions ---------- */
 
@@ -1416,7 +1386,7 @@ footer {
     font-size: 15px;
   }
 
-  .social-icons{
+  .social-icons {
     margin-left: 20px;
   }
 
@@ -1430,7 +1400,6 @@ footer {
     font-size: 22px;
   }
 
-
   /* ---------- Certificate ---------- */
 
   .certs-container {
@@ -1442,14 +1411,12 @@ footer {
     max-height: 220px;
   }
 
-
   /* ---------- Mobile HR hidden ---------- */
 
   .mobile-hr {
     display: none;
   }
 }
-
 
 /* =========================================================
    LARGE DESKTOP
@@ -1467,7 +1434,7 @@ footer {
     font-size: 24px;
   }
 
-  .social-icons{
+  .social-icons {
     margin-left: 20px;
   }
 
@@ -1480,7 +1447,6 @@ footer {
     max-height: 220px;
   }
 }
-
 
 /* =========================================================
    MOBILE
@@ -1498,7 +1464,6 @@ footer {
     padding: 20px 16px 32px;
   }
 
-
   /* ---------- Theme toggle ---------- */
 
   .theme-toggle {
@@ -1510,7 +1475,6 @@ footer {
 
     height: 40px;
   }
-
 
   /* ---------- Single-column layout ---------- */
 
@@ -1525,7 +1489,6 @@ footer {
 
     padding-top: 48px;
   }
-
 
   /* ---------- Columns ---------- */
 
@@ -1546,13 +1509,11 @@ footer {
     padding: 0;
   }
 
-
   /* ---------- Divider ---------- */
 
   .col-divider {
     display: none !important;
   }
-
 
   /* =======================================================
      HERO
@@ -1572,7 +1533,6 @@ footer {
     flex-wrap: nowrap;
   }
 
-
   /* ---------- Mobile avatar ---------- */
 
   .avatar {
@@ -1584,7 +1544,6 @@ footer {
 
     flex: 0 0 82px;
   }
-
 
   /* ---------- Mobile hero text ---------- */
 
@@ -1626,7 +1585,6 @@ footer {
     overflow-wrap: anywhere;
   }
 
-
   /* =======================================================
      DESCRIPTION
      ======================================================= */
@@ -1642,7 +1600,6 @@ footer {
 
     line-height: 1.6;
   }
-
 
   /* =======================================================
      ACTIONS
@@ -1682,7 +1639,6 @@ footer {
     font-size: 15px;
   }
 
-
   /* =======================================================
      MOBILE HR
      ======================================================= */
@@ -1694,7 +1650,6 @@ footer {
 
     margin: 30px 0 0;
   }
-
 
   /* =======================================================
      PROJECTS
@@ -1730,13 +1685,11 @@ footer {
     display: none;
   }
 
-
   /* ---------- Section titles ---------- */
 
   h2.section-title {
     font-size: 18px;
   }
-
 
   /* =======================================================
      CERTIFICATES / SKILLS
@@ -1757,7 +1710,6 @@ footer {
     min-height: 0;
   }
 
-
   /* ---------- Vertical certificate swipe ---------- */
 
   .certs-track {
@@ -1772,7 +1724,6 @@ footer {
     scroll-snap-type: y mandatory;
   }
 
-
   .cert-item {
     min-height: 58px;
 
@@ -1783,7 +1734,6 @@ footer {
     font-size: 13px;
   }
 
-
   /*
      Mobile users can swipe vertically.
      Hide desktop arrows.
@@ -1792,7 +1742,6 @@ footer {
   .cert-carousel-arrow {
     display: none;
   }
-
 
   /* =======================================================
      EDUCATION
@@ -1804,7 +1753,6 @@ footer {
     padding: 16px 17px;
   }
 
-
   /* =======================================================
      FOOTER
      ======================================================= */
@@ -1813,7 +1761,6 @@ footer {
     margin-top: 36px;
   }
 }
-
 
 /* =========================================================
    VERY SMALL PHONES
@@ -1889,7 +1836,6 @@ footer {
     font-size: 18px;
   }
 
-
   /* ---------- Small certificate cards ---------- */
 
   .certs-track {
@@ -1913,7 +1859,6 @@ footer {
   }
 }
 
-
 /* =========================================================
    REDUCED MOTION
    ========================================================= */
@@ -1926,4 +1871,3 @@ footer {
     scroll-behavior: auto !important;
   }
 }
-
