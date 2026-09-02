@@ -15,6 +15,7 @@ export default function HeroSection() {
 
   return (
     <div className="col-left">
+      {/* Hero Top */}
       <div className="hero-top">
         <div className="avatar">
           <img
@@ -28,15 +29,19 @@ export default function HeroSection() {
 
         <div className="hero-text">
           <p className="hi">Hi,</p>
+
           <h1>I'M {name.toUpperCase()}</h1>
+
           <p className="role">{role.toUpperCase()}</p>
         </div>
       </div>
 
+      {/* Description */}
       <div className="description-card">
         {description}
       </div>
 
+      {/* Actions */}
       <div className="actions">
         <a
           className="resume-btn"
@@ -46,9 +51,10 @@ export default function HeroSection() {
           aria-label="View resume"
         >
           <Eye size={16} />
-          View resume
+          <span>View resume</span>
         </a>
 
+        {/* Social Icons */}
         <div className="social-icons">
           <a
             className="icon-circle linkedin"
@@ -82,51 +88,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <hr className="mobile-hr" />
-    </div>
-  );
-}      <div className="description-card">{description}</div>
-
-      <div className="actions">
-        <a
-  className="resume-btn"
-  href={rsumeUrl}
-  onClick={handleResumeClick}
-  aria-label="View resume"
->
-  <Eye size={16} /> View resume
-</a>
-        <div className="social-icons">
-          <a
-            className="icon-circle linkedin"
-            href={socials.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            className="icon-circle"
-            href={socials.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub profile"
-          >
-            <FaGithub />
-          </a>
-          <a
-            className="icon-circle"
-            href={socials.leetcode}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LeetCode profile"
-          >
-            <SiLeetcode />
-          </a>
-        </div>
-      </div>
-      
+      {/* Mobile Divider */}
       <hr className="mobile-hr" />
     </div>
   );
