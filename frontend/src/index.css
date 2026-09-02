@@ -1139,6 +1139,113 @@ footer {
   padding-top: 20px;
 }
 
+/* =========================================================
+   NAV ICONS (SKILLS / PROJECTS / CERTIFICATES / EDUCATION)
+   ========================================================= */
+
+.navicons-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.navicons-tablist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.navicons-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  background: var(--icon-bg);
+  border: 1px solid var(--icon-border);
+  box-shadow: var(--icon-shadow);
+
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.navicons-tab-btn:hover {
+  transform: translateY(-1px);
+  color: var(--text-primary);
+}
+
+.navicons-tab-btn.is-active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.navicons-tab-icon {
+  flex-shrink: 0;
+}
+
+.navicons-panel-container {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1.5px dashed var(--dashed-border);
+  border-radius: 16px;
+  padding: 20px;
+
+  overflow: hidden;
+}
+
+.navicons-panel-content {
+  animation: navicons-fade-in 0.22s ease;
+}
+
+@keyframes navicons-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navicons-panel-content {
+    animation: none;
+  }
+}
+
+
+/* ---------- Nav icons — mobile ---------- */
+
+@media (max-width: 767px) {
+  .navicons-panel-container {
+    padding: 16px;
+  }
+}
+
+/* ---------- Nav icons — very small phones ---------- */
+
+@media (max-width: 380px) {
+  .navicons-tab-btn {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .navicons-tab-label {
+    display: none;
+  }
+}
 
 /* =========================================================
    TABLET

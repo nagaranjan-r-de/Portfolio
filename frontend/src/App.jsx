@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./components/ThemeToggle";
 import HeroSection from "./components/HeroSection";
-import ProjectsSection from "./components/ProjectsSection";
-import CertificatesSection from "./components/CertificatesSection";
-import SkillsSection from "./components/SkillsSection";
-import EducationSection from "./components/EducationSection";
+import NavIcons from "./components/NavIcons";
 import Footer from "./components/Footer";
 
 const STORAGE_KEY = "portfolio-theme";
@@ -37,14 +34,7 @@ export default function App() {
         <div className="col-divider" aria-hidden="true" />
 
         <div className="col-right">
-          <ProjectsSection />
-
-          <div className="mid-grid">
-            <CertificatesSection />
-            <SkillsSection />
-          </div>
-
-          <EducationSection />
+          <NavIcons />
         </div>
       </div>
 
