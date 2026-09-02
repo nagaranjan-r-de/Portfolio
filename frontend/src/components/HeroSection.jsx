@@ -15,7 +15,6 @@ export default function HeroSection() {
 
   return (
     <div className="col-left">
-      {/* Hero Top */}
       <div className="hero-top">
         <div className="avatar">
           <img
@@ -29,19 +28,15 @@ export default function HeroSection() {
 
         <div className="hero-text">
           <p className="hi">Hi,</p>
-
           <h1>I'M {name.toUpperCase()}</h1>
-
           <p className="role">{role.toUpperCase()}</p>
         </div>
       </div>
 
-      {/* Description */}
       <div className="description-card">
         {description}
       </div>
 
-      {/* Actions */}
       <div className="actions">
         <a
           className="resume-btn"
@@ -54,7 +49,6 @@ export default function HeroSection() {
           <span>View resume</span>
         </a>
 
-        {/* Social Icons */}
         <div className="social-icons">
           <a
             className="icon-circle linkedin"
@@ -88,7 +82,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Mobile Divider */}
       <hr className="mobile-hr" />
     </div>
   );
