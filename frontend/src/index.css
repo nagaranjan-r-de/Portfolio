@@ -1232,7 +1232,30 @@ footer {
   .navicons-panel-container {
     padding: 16px;
   }
+
+  .navicons-tablist {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding-bottom: 4px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .navicons-tablist::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navicons-tab-btn {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
 }
+
 
 /* ---------- Nav icons — very small phones ---------- */
 
@@ -1240,10 +1263,6 @@ footer {
   .navicons-tab-btn {
     padding: 8px 10px;
     gap: 6px;
-  }
-
-  .navicons-tab-label {
-    display: none;
   }
 }
 
