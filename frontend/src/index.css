@@ -1156,8 +1156,6 @@ footer {
 }
 
 .navicons-tab-btn:hover {
-  transform: translateY(-1px);
-
   color: var(--text-primary);
 }
 
