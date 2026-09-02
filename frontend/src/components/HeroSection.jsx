@@ -13,19 +13,6 @@ export default function HeroSection() {
     socials,
   } = portfolioData;
 
-  const handleResumeClick = (e) => {
-    e.preventDefault();
-
-    const googleDocsUrl =
-      "https://docs.google.com/document/d/1stgbEIFOXyouzpNoxLgXI49ot60VwMa9rQo5kHlUNhA/edit?usp=drivesdk";
-
-    if (resumeUrl) {
-      window.open(resumeUrl, "_blank", "noopener,noreferrer");
-    } else {
-      window.open(googleDocsUrl, "_blank", "noopener,noreferrer");
-    }
-  };
-
   return (
     <div className="col-left">
       <div className="hero-top">
@@ -54,7 +41,8 @@ export default function HeroSection() {
         <a
           className="resume-btn"
           href={resumeUrl}
-          onClick={handleResumeClick}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="View resume"
         >
           <Eye size={16} />
