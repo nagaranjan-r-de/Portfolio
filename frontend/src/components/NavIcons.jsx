@@ -33,7 +33,7 @@ const tabs = [
 ];
 
 export default function NavIcons() {
-  const [activeTab, setActiveTab] = useState("skills");
+  const [activeTab, setActiveTab] = useState("projects");
   const activeIndex = tabs.findIndex((tab) => tab.id === activeTab);
 
   return (
