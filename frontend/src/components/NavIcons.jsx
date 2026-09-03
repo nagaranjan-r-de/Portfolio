@@ -6,17 +6,17 @@ import CertificatesSection from "./CertificatesSection";
 import EducationSection from "./EducationSection";
 
 const tabs = [
+   {
+    id: "projects",
+    label: "Projects",
+    icon: FolderKanban,
+    component: <ProjectsSection />,
+  },
   {
     id: "skills",
     label: "Skills",
     icon: Code2,
     component: <SkillsSection />,
-  },
-  {
-    id: "projects",
-    label: "Projects",
-    icon: FolderKanban,
-    component: <ProjectsSection />,
   },
   {
     id: "certificates",
