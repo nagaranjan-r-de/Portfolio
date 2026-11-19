@@ -677,15 +677,11 @@ h2.section-title {
 .project-links {
   display: flex;
 
-  margin-top: auto;
+  
 
   justify-content: space-between;
 
   font-size: 12.5px;
-
-  gap: 1rem;
-
-  padding-top: 1rem;
   
   font-weight: 600;
 }
