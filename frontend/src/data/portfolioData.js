@@ -11,14 +11,14 @@ const portfolioData = {
     leetcode: "https://leetcode.com/nagaranjan-r-de",
   },
   projects: [
-    // {
-    //   id: "",
-    //   name: "",
-    //   description: "",
-    //   image: "",
-    //   demoUrl: "",
-    //   repoUrl: "",
-    // },
+    {
+      id: "p0",
+      name: "No projects",
+      description: " ' I haven't started my projects yet.'",
+      // image: "",
+      // demoUrl: "",
+      // repoUrl: "",
+    },
   ],
   certificates: [
     { id: "c1", name: "AWS Cloud Certification", url: "/certificates/AWS Cloud Certification.pdf" },
