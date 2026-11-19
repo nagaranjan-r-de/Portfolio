@@ -11,22 +11,14 @@ const portfolioData = {
     leetcode: "https://leetcode.com/nagaranjan-r-de",
   },
   projects: [
-    {
-      id: "p1",
-      name: "wildlife movement analysis system.",
-      description: "Using demo data to analyze wildlife behavior, detect movement anomalies, and assess conservation risks through an interactive dashboard.",
-      image: "/projects/project1.png",
-      demoUrl: "https://wild-movement-analysis.netlify.app",
-      repoUrl: "https://github.com/nagaranjan-r-de/wildlife-movement-analysis/tree/main",
-    },
-    {
-      id: "p2",
-      name: "personal-money-manager",
-      description: "A smart expense-tracking app that helps me to manage my finances by setting daily or monthly spending limits and monitoring the expenses.",
-      image: "/projects/project2.png",
-      demoUrl: "person use only",
-      repoUrl: "https://github.com/nagaranjan-r-de/personal-money-management",
-    },
+    // {
+    //   id: "",
+    //   name: "",
+    //   description: "",
+    //   image: "",
+    //   demoUrl: "",
+    //   repoUrl: "",
+    // },
   ],
   certificates: [
     { id: "c1", name: "AWS Cloud Certification", url: "/certificates/AWS Cloud Certification.pdf" },
